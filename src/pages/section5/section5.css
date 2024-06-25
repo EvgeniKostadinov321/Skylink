@@ -1,0 +1,129 @@
+#section5 {
+    height: 100dvh;
+    padding: 10dvh;
+}
+
+#main-heding-s5 {
+    font-size: 4rem;
+    margin-bottom: 4dvh;
+}
+
+#change-image {
+    width: 100%;
+    border-bottom-right-radius: 50px;
+}
+
+
+.flex-s5 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.s5-image-holder {
+    width: 48%;    
+    height: 55dvh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 50px;
+}
+
+
+.grid-destinations {
+    width: 50%;  
+    height: 55dvh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns, each 1 fraction of available space */
+    align-content: space-between;
+}
+
+.span-wrappers {
+    border-top: 1px solid rgba(128, 128, 128, 0.815);
+    padding-top: 5px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    height: 15dvh;
+    justify-content: space-between;
+    width: 300px;
+    max-width: 400px;
+}
+
+.destinations-spans {
+    font-size: 2rem;
+}
+
+.destinations-spans2 {
+    letter-spacing: 1.1px;
+    font-size: 1.35rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.815);
+    border-right: 1px solid rgba(128, 128, 128, 0.815);
+    padding-bottom: 15px;
+    border-bottom-right-radius: 50px;
+    width: 220px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 1700px) {
+    .s5-image-holder {
+        width: 45%;    
+        height: 55dvh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-bottom-right-radius: 50px;
+    }
+
+    .grid-destinations {
+        width: 50%;  
+        height: 55dvh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: space-between;
+    }
+
+    #section5 {
+        height: 80dvh;
+        padding: 3dvh 3dvh ;
+    }
+ }
+
+
+ @media only screen and (max-width: 1390px) {
+    .s5-image-holder {
+        display: none;
+    }
+    
+    .grid-destinations {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+        row-gap: 10dvh;
+        padding: 5dvh 0;
+    }
+
+    #section5 {
+        height: auto;
+        padding: 5dvh 0;
+    }
+
+    .span-wrappers {
+        border-top: 1px solid rgba(128, 128, 128, 0.815);
+        padding-top: 5px;
+        display: flex;
+        width: 400px;
+        
+    }
+
+    #main-heding-s5 {
+        font-size: 2rem;
+        margin-top: 4dvh;
+        margin-bottom: 4dvh;
+        width: 90%;
+        margin: 4dvh auto;
+    }
+ }

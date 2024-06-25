@@ -1,0 +1,161 @@
+
+footer {
+    height: auto;
+    padding: 50px 50px 5px 50px;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer-main-h1 {
+    margin-bottom: 30px;
+    font-size: 4rem;
+}
+
+.lnks-footer-style {
+    font-size: 1.75rem;
+    color: gray;
+}
+
+.lnks-footer-style:hover {
+    color: rgb(255, 255, 255);
+    transition: .8s;
+}
+
+.footer-content-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    column-gap: 30px;
+    row-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-socials {
+    font-size: 1.25rem;
+    letter-spacing: 1.1px;
+    width: 240px;
+    
+}
+
+
+.follow-h2 {
+    margin-bottom: 20px;
+}
+
+
+.icons-wrapper-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    column-gap: 20px;
+}
+
+.lnks-footer-style-icons {
+    border: 1px solid white;
+    background: white;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.links-footer {
+    
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 100px;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+.socials-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 20px;
+}
+
+.footer-p {
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.private-part {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
+
+.private-sign {
+    font-size: 2rem;
+}
+
+
+#social-icons-image {
+    width: 25px;
+}
+
+@media only screen and (max-width: 1260px) {
+    .footer-content-section {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .private-part {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 20px;
+        
+        flex-wrap: nowrap;
+    }
+}
+
+
+@media only screen and (max-width: 560px) {
+    .footer-content-section {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .links-footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .footer-p {
+        font-size: 2.75rem;
+    }
+
+    #footer-main-h1 {
+        font-size: 5.5rem;
+    }
+}
+

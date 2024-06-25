@@ -1,0 +1,273 @@
+header {
+    width: 100%;
+    height: 10dvh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2dvw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.links-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 20%;
+    width: auto;
+    column-gap: 30px;
+    margin-right: 50px;
+}
+
+.circle-btn-wrapper {
+  display: flex;
+}
+
+.circle-btn {
+    background: black;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0px 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: black;
+    font-size: 1.5rem;
+    position:relative;
+    text-decoration:none;
+    display:inline-block;
+}
+
+
+  a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px #000;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin:100% 50%
+  }
+
+  a:hover:after { 
+    transform: scaleX(1);
+    transform-origin:0 50%;
+  }
+
+
+.icon-nav {
+  width: 20px;
+  filter: invert(0.8);
+}
+
+
+@media only screen and (max-width: 1300px) {
+  header {
+    height: 17dvh;
+  }
+  
+  .circle-btn-wrapper {
+    flex-direction: column;
+    row-gap: 10px;
+    height: 20dvh;
+    align-items: center;
+    justify-content: center;
+  }
+  .hide-less-1300 {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  header {
+    height: 21dvh;
+    
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .circle-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0px 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+
+
+.menu-dialog {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 800px;
+  height: 100vh; /* Full viewport height */
+  background: white;
+  transition: left 0.8s ease-in-out;
+  z-index: 999;
+}
+
+.menu-dialog.open { /* Style for open state */
+  left: 0;
+}
+
+
+.black-top {
+  border: 1px solid black;
+  width: 100%;
+  height: 200px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  justify-content: space-evenly;
+}
+
+#white-dialog-header {
+  color: white;
+  font-size: 3rem;
+}
+
+
+.dialog-controls {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+
+}
+
+.control-btn-dialog {
+  background: none;
+  border: none;
+  margin-right: 30px;
+  height: 40px;
+  width: 120px;
+  border-radius: 50px;
+  margin-bottom: 40px;
+  font-size: 1.10rem;
+  color: white;
+}
+
+
+.selected {
+  background: #BC7155;
+  color: black;
+}
+
+
+#close-dialog-btn {
+  background: white;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cancel-dialog-icon {
+  width: 20px;
+}
+
+.form-div {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.212);
+}
+
+.trip-details-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-right: 50px;
+  padding-bottom: 15px;
+}
+
+.trip-details-btn:hover {
+  border-bottom: 4px solid #BC7155;
+}
+
+.selected-trip {
+  border-bottom: 4px solid #BC7155;
+  font-weight: 600;
+}
+
+#form-trip {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50vh;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.label-trip {
+  color: gray;
+  font-size: 1.75rem;
+}
+
+.input-trip {
+  height: 40px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid gray;
+  color: black;
+  font-size: 1.75rem;
+}
+
+.input-trip::placeholder {
+  color: rgba(128, 128, 128, 0.425);
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .menu-dialog {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: white;
+    transition: left 0.8s ease-in-out;
+    z-index: 999;
+  }
+}
+
+
+
+#proceed-btn-dialog {
+  margin-left: 3rem;
+  height: 60px;
+  width: 160px;
+  border-radius: 60px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+}
+
+#dialog-z-index {
+  position: absolute;
+  z-index: 1000;
+}
